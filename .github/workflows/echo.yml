@@ -1,0 +1,19 @@
+name: Echo
+
+on:
+  push:
+    branches:
+        - master
+
+env:
+  REPO: actions-test
+  MSG: $REPO
+
+jobs:
+  echo:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - run: |
+          echo REPO
+          echo $MSG
