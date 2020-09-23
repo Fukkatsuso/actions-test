@@ -2,8 +2,9 @@ name: Echo
 
 on:
   push:
-    branches:
-        - master
+    paths-ignore:
+      - 'README.md'
+
 
 env:
   REPO: actions-test
