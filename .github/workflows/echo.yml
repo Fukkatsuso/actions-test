@@ -7,16 +7,16 @@ on:
 
 env:
   REPO: actions-test
-  MSG: ${{ REPO }}
+  # MSG: ${{ REPO }}
 
 jobs:
-  echo:
-    runs-on: ubuntu-18.04
+  # echo:
+  #   runs-on: ubuntu-18.04
 
-    steps:
-      - run: |
-          echo REPO
-          echo $MSG
+  #   steps:
+  #     - run: |
+  #         echo REPO
+  #         echo $MSG
 
   env-to-env:
     runs-on: ubuntu-latest
