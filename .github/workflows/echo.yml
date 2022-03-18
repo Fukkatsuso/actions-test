@@ -24,4 +24,4 @@ jobs:
     steps:
       - run: echo $ENV
         env:
-          ENV: $REPO
+          ENV: ${{ env.REPO }}
