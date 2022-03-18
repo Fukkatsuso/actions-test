@@ -3,8 +3,7 @@ name: Echo
 on:
   push:
     paths-ignore:
-      - 'README.md'
-
+      - "README.md"
 
 env:
   REPO: actions-test
@@ -18,3 +17,11 @@ jobs:
       - run: |
           echo REPO
           echo $MSG
+
+  env-to-env:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo $ENV
+        env:
+          ENV: $REPO
