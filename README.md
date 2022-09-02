@@ -6,3 +6,6 @@ GitHub Actionsで試してみたいことを実験する
 
 - envで先に定義した変数を，envで後に定義する変数に渡すことはできない(?)
 - envで定義した変数 `XXX` をsteps内のenvで参照するには， `${{ env.XXX }}` とすれば良い
+- 現在の絶対パスを得る方法は2通り
+  - `pwd`
+  - `$GITHUB_WORKSPACE`
